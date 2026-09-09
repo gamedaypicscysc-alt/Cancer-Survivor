@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Your Success Story - Cancer Awareness</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo"><a href="/">Hope & Support</a></div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/journey">Journey</a></li>
+          <li><a href="/about-cancer">About Cancer</a></li>
+          <li><a href="/success-story">Share Story</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="google_translate_element"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Share Your Success Story</h1>
+    <p>Your journey can bring hope to others. Submitted stories are reviewed before being published on our <a href="/testimonials">Testimonials</a> page.</p>
+
+    <!-- Replace YOUR_FORMSPREE_ID with your Formspree endpoint key -->
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+      <input type="hidden" name="_subject" value="New Success Story Submission for Review">
+
+      <div class="form-group">
+        <label for="author_name">Your Name or Pseudonym</label>
+        <input type="text" id="author_name" name="author_name" required placeholder="e.g. Jane D.">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email (Kept private)</label>
+        <input type="email" id="email" name="email" required placeholder="name@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="story_title">Story Title</label>
+        <input type="text" id="story_title" name="story_title" required placeholder="e.g. My Path to Overcoming Cancer">
+      </div>
+
+      <div class="form-group">
+        <label for="story_body">Your Journey / Story</label>
+        <textarea id="story_body" name="story_body" rows="8" required placeholder="Write your story here..."></textarea>
+      </div>
+
+      <!-- Privacy Agreement Checkbox -->
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="privacy_consent" name="privacy_consent" value="Agreed" required>
+        <label for="privacy_consent">
+          I agree to have my story reviewed and published on the Testimonials page. I understand my email address will remain confidential.
+        </label>
+      </div>
+
+      <button type="submit">Submit Story for Approval</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Cancer Awareness Initiative. All rights reserved.</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
